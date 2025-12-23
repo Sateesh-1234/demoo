@@ -1,0 +1,62 @@
+REST APIs :-
+    10000coders:port/getStudents => no data => Requested person details => State
+
+    REST apis -> stateless 
+
+    Authentication & Authorization 
+
+
+
+AUTHENTICATION :-
+=================
+    Identity 
+
+    10K --> Landing page, Login (Students, PM, Mentors, Admins ) 
+
+
+    User name & Password => abcd123 ==> String (randomString123#@) ==> Hashing (Bcrypt, npm module)
+
+AUTHORIZATION :- 
+    Permissions / Access
+
+    Naukri --> Job seeker -> Job post 
+
+
+Authentication ==> Custom authentication 
+
+Types Authentication :- 
+    1. HTTP default authentication 
+        base 64 
+        EX: small size orhanization tasks - less security
+
+    2. Token based authentication
+        random token / string - api keys
+
+    3. JWT - Json Web Tokens
+        After login, The server builds JWT & send s to client
+
+    4. OAuth + JWT 
+        OAuth provider (Google, GitHub) + Tokens 
+
+
+
+
+
+JWT :-
+    JSON WEB TOKENS 
+    Created server --> sends from server to client 
+
+    Access token 
+    Refresh token 
+
+
+COOKIE :- 
+    A simple data created in server & passed towards client.
+
+    tokens, preferences
+
+
+
+Authorization / Protected Routes / Role based authentication
+
+    req --> Middlewares --> res 
